@@ -1,7 +1,7 @@
 trigger:
 - master
 
-- job: Publish
+- job: 'Publish'
   pool: 'default'
   steps:
   - script: |  
@@ -16,7 +16,8 @@ trigger:
       PathtoPublish: '$(Build.ArtifactStagingDirectory)'
       ArtifactName: drop
       publishLocation: Container
-- job: Download
+
+- job: 'Download'
   pool: 'default'
   steps:
   - task: DownloadBuildArtifacts@0
