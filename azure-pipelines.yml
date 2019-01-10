@@ -1,11 +1,11 @@
 trigger:
 - master
 
-pool: 'default'
 
 phases:
 - phase: Publish
- 
+  pool: 'default'
+
   steps:
   - script: |  
      cd $(Build.ArtifactStagingDirectory)
@@ -22,7 +22,8 @@ phases:
       publishLocation: Container
 
 - phase: Download
-  
+  pool: 'default'
+
   steps:
   - task: DownloadBuildArtifacts@0
     displayName: "Download Build Artifacts"
