@@ -9,6 +9,7 @@ phases:
      cd $(Build.ArtifactStagingDirectory)
      echo "hello world" > hi.txt
      echo "bye" > bye.txt
+
     displayName: Create two text files
     
   - task: PublishBuildArtifacts@1
