@@ -1,8 +1,10 @@
-resources:
-- repo: self
+trigger:
+- master
+
+pool: 'default'
+
 phases:
 - phase: Publish
-  queue: 'Default'
  
   steps:
   - script: |  
@@ -20,7 +22,6 @@ phases:
       publishLocation: Container
 
 - phase: Download
-  queue: 'Default'
   
   steps:
   - task: DownloadBuildArtifacts@0
