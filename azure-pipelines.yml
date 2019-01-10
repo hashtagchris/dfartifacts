@@ -2,7 +2,7 @@ resources:
 - repo: self
 phases:
 - phase: Publish
-  queue: 'default'
+  queue: 'Default'
  
   steps:
   - script: |  
@@ -20,7 +20,7 @@ phases:
       publishLocation: Container
 
 - phase: Download
-  queue: 'default'
+  queue: 'Default'
   
   steps:
   - task: DownloadBuildArtifacts@0
