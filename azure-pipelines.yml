@@ -17,6 +17,8 @@ jobs:
       ArtifactName: drop
       publishLocation: Container
 - job: download
+  dependsOn: publish
+  condition: succeeded()
   pool: 'default'
   steps:
   - task: DownloadBuildArtifacts@0
