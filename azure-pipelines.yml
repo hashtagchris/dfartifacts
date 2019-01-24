@@ -8,8 +8,15 @@ jobs:
      cd $(Build.ArtifactStagingDirectory)
      echo "hello world" > hi.txt
      echo "bye" > bye.txt
+     mkdir usa
+     cd usa
+     mkdir nc
+     cd nc
+     mkdir durham
+     cd durham
+     echo "hello from Durham" > greeting.txt
 
-    displayName: Create two text files
+    displayName: Create some text files
   - task: PublishBuildArtifacts@1
     displayName: "Publish Artifact: drop"
     inputs:
