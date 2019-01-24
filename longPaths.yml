@@ -28,7 +28,7 @@ jobs:
      echo "GotHere" > 307.txt
      mkdir fortyNineCharactersFollowedByASlashMakesFiftyChar
      cd fortyNineCharactersFollowedByASlashMakesFiftyChar
-     echo "GotHere" > 357.txt
+     echo "GotHere2" > 357.txt
     displayName: Create some text files
   - task: PublishBuildArtifacts@1
     displayName: "Publish Artifact: drop"
