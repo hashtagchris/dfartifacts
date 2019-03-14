@@ -1,5 +1,5 @@
 # dfartifacts
 
-pi
-pi
-pi
+free
+free
+free
