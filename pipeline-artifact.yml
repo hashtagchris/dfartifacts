@@ -16,7 +16,7 @@ jobs:
      cd durham
      echo "hello from Durham" > greeting.txt
     displayName: Create some text files
-  - task: PublishPipelineArtifacts@1
+  - task: PublishPipelineArtifact@0
     displayName: "Publish Artifact: drop"
     inputs:
       PathtoPublish: '$(Build.ArtifactStagingDirectory)'
