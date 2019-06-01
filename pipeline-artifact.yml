@@ -27,7 +27,7 @@ jobs:
   condition: succeeded()
   pool: 'default'
   steps:
-  - task: DownloadPipelineArtifacts@0
+  - task: DownloadPipelineArtifact@1
     displayName: "Download Pipeline Artifacts"
     inputs:
       artifactName: drop
